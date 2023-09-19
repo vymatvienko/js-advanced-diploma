@@ -12,13 +12,34 @@
  * undead
  * vampire
  */
+// export default class Character {
+//   constructor(level, type = 'generic') {
+//     this.level = level;
+//     this.attack = 0;
+//     this.defence = 0;
+//     this.health = 50;
+//     this.type = type;
+//     // TODO: выбросите исключение, если кто-то использует "new Character()"
+
+//     if (new.target.name === 'Character') {
+//       throw new Error('Нельзя создавать персонажей, используя new Character()');
+//     }
+//   }
+// }
+
 export default class Character {
   constructor(level, type = 'generic') {
     this.level = level;
     this.attack = 0;
     this.defence = 0;
     this.health = 50;
+    this.move = 0;
+    this.strike = 0;
     this.type = type;
     // TODO: выбросите исключение, если кто-то использует "new Character()"
+
+    if (new.target.name === 'Character') {
+      throw new Error('Нельзя создавать персонажей, используя new Character()');
+    }
   }
 }

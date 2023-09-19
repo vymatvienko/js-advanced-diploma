@@ -13,4 +13,10 @@
  * */
 export default class Team {
   // TODO: write your logic here
+  constructor(characters) {
+    this.characters = [];
+    for (let i = 0; i < characters.length; i++) {
+      this.characters.push(characters[i]);
+    }
+  }
 }
