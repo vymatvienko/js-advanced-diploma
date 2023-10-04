@@ -39,5 +39,8 @@
     "core-js": "^3.32.1",
     "jest-environment-jsdom": "^29.7.0",
     "url-loader": "^4.1.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
