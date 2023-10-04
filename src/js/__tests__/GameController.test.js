@@ -24,7 +24,6 @@ test('onCellEnterTitle', () => {
   const bowman = new PositionedCharacter(new Bowman(1), 1);
   gameController.gameState.playerTeam.push(bowman);
   gameController.onCellEnter(1);
-  // expect(gamePlay.cells[1].title).toBe('🎖1 ⚔25 🛡25 ❤50');
   expect(gamePlay.cells[1].title).toBe(`\u{1F396}${bowman.character.level}\u{2694}${bowman.character.attack}\u{1F6E1}${bowman.character.defence}\u{2764}${bowman.character.health}`);
 });
 
